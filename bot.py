@@ -47,8 +47,8 @@ def list_users(message):
     text = "👥 Список користувачів:"
 
     for uid, data in users.items():
-        text += f"{data['name']} — {data['phone']} (ID: {uid})
-"
+        text += f"{data['name']} — {data['phone']} (ID: {uid})"
+
     bot.send_message(message.chat.id, text)
 
 # Видалення користувача
