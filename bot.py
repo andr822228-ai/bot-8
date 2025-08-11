@@ -44,8 +44,8 @@ def list_users(message):
     if not users:
         bot.send_message(message.chat.id, "Список пустий.")
         return
-    text = "👥 Список користувачів:
-"
+    text = "👥 Список користувачів:"
+
     for uid, data in users.items():
         text += f"{data['name']} — {data['phone']} (ID: {uid})
 "
